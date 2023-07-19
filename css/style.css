@@ -241,7 +241,26 @@ a .logo {
     padding: 0;
 }
 
-.card-img-top {
+.galeria-partes-motos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria-partes-motos div {
+    background-color: red;
+    display: inline-block;
+}
+
+.card {
+    width: 290px;
+    margin: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.card img {
     width: 250px;
     height: 250px;
 }
+
