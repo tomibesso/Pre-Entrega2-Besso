@@ -1,0 +1,247 @@
+.grid-container {
+    display: grid;
+    background-color: rgb(211, 206, 255);
+    border: 2px solid black;
+    margin: 2px;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-rows: 130px 565px 50px;
+    grid-gap: 2px;
+}
+
+
+.grid-item-header {
+    display: grid;
+    grid-column: 1 / 5 ;
+    grid-row: 1 / 2 ;
+}
+
+.grid-item-main {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.publicidad1 {
+    display: grid;
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3 ;
+}
+
+.publicidad2 {
+    display: grid;
+    grid-column: 4 / 5 ;
+    grid-row: 2 / 3 ;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.enlaces-internos li {
+    display: inline-block;
+}
+
+.enlaces-internos li a:hover {
+    color: rgb(11, 77, 193);
+    text-decoration: underline;
+}
+
+.div-buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador-texto {
+    display: inline-block;
+    width: 300px;
+}
+
+a .logo {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+.logo:hover {
+    outline: 2px solid #a4a4ff;
+    border-radius: 50%;
+}
+
+#wiki {
+    display: flex;
+    margin: 10px;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+.enlaces-internos a {
+    color: rgb(20, 28, 76);
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+#wiki a {
+    color: rgb(20, 28, 76);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#wiki a:hover {
+    color: rgb(11, 77, 193);
+    text-decoration: underline;
+}
+
+.grid-item-aside img {
+    width: 200px;
+    height: 618px;
+    border-radius: none
+}
+
+.logos-redes-sociales {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   padding: 2px;
+}
+
+.bi-envelope {
+    height: 25px;
+    width: 25px;
+}
+
+.enlaces-bibliografia {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.grid-item-footer {
+    display: grid;
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+}
+
+.grid-item-footer a {
+    padding: 2px;
+    position: relative;
+    right: 210px;
+}
+
+.logo-avatar {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+}
+
+#cambiar-avatar {
+    position: relative;
+    top: -45px;
+}
+
+.datos-personales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    position: relative;
+    top: -45px;
+}
+
+.datos-personales input {
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.datos-personales input:last-child {
+    height: 60px;
+}
+
+.datos-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.datos-bottom button {
+    position: relative;
+    left: 137px;
+}
+
+.datos-bottom a {
+    position: relative;
+    right: 10px;
+}
+
+
+.grid-item-main h1 {
+    margin: 10px;
+}
+
+.grid-item-main h3 {
+    position: relative;
+    bottom: 60px;
+    margin: 10px;
+}
+
+.grid-item-main h5 {
+    position: relative;
+    bottom: 140px;
+    margin: 10px;
+}
+
+.datos-publicidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    position: relative;
+    bottom: 200px;
+    left: 10px;
+}
+
+.datos-publicidad input {
+    margin-bottom: 10px;
+}
+
+.datos-publicidad button {
+    width: 110px;
+    position: relative;
+    left: 290px;
+}
+
+.texto-nosotros p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card-img-top {
+    width: 250px;
+    height: 250px;
+}
