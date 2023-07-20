@@ -1,90 +1,20 @@
-.grid-container {
-    display: grid;
-    background-color: rgb(211, 206, 255);
-    border: 2px solid black;
-    margin: 2px;
-    grid-template-columns: 200px 1fr 1fr 200px;
-    grid-template-rows: 130px 565px 50px;
-    grid-gap: 2px;
-}
-
-
-.grid-item-header {
-    display: grid;
-    grid-column: 1 / 5 ;
-    grid-row: 1 / 2 ;
-}
-
-.grid-item-main {
-    display: grid;
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-}
-
-.publicidad1 {
-    display: grid;
-    grid-column: 1 / 2 ;
-    grid-row: 2 / 3 ;
-}
-
-.publicidad2 {
-    display: grid;
-    grid-column: 4 / 5 ;
-    grid-row: 2 / 3 ;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-.enlaces-internos li {
-    display: inline-block;
-}
-
-.enlaces-internos li a:hover {
-    color: rgb(11, 77, 193);
-    text-decoration: underline;
-}
-
-.div-buscador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buscador-texto {
-    display: inline-block;
-    width: 300px;
-}
-
 a .logo {
     height: 75px;
     width: 75px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     position: absolute;
-    left: 40px;
     top: 15px;
+    left: 15px;
+}
+
+.wikimotos {
+    position: absolute;
+    top: 85px;
+    left: 18px;
 }
 
 .logo:hover {
     outline: 2px solid #a4a4ff;
     border-radius: 50%;
-}
-
-#wiki {
-    display: flex;
-    margin: 10px;
-    position: absolute;
-    top: 100px;
-    left: 30px;
 }
 
 .enlaces-internos a {
@@ -106,12 +36,6 @@ a .logo {
     text-decoration: underline;
 }
 
-.grid-item-aside img {
-    width: 200px;
-    height: 618px;
-    border-radius: none
-}
-
 .logos-redes-sociales {
    width: 25px;
    height: 25px;
@@ -128,21 +52,6 @@ a .logo {
     display: flex;
     flex-direction: column;
     margin: 10px;
-}
-
-.grid-item-footer {
-    display: grid;
-    grid-column: 1 / 5;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 5px;
-}
-
-.grid-item-footer a {
-    padding: 2px;
-    position: relative;
-    right: 210px;
 }
 
 .logo-avatar {
@@ -264,3 +173,23 @@ a .logo {
     height: 250px;
 }
 
+.grid-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.buscador {
+    width: 350px;
+    position: absolute;
+    left: 575px;
+    top: 25px;
+}
+
+.main h1 {
+margin: 20px;
+}
+
+.nav-item:nth-of-type(4) {
+    width: 100px;
+}
