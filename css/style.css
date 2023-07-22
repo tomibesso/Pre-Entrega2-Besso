@@ -55,37 +55,6 @@ a .logo {
     margin: 10px;
 }
 
-.logo-avatar {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    position: relative;
-    top: -20px;
-}
-
-#cambiar-avatar {
-    position: relative;
-    top: -45px;
-}
-
-.datos-personales {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-    position: relative;
-    top: -45px;
-}
-
-.datos-personales input {
-    margin-bottom: 10px;
-    width: 250px;
-}
-
-.datos-personales input:last-child {
-    height: 60px;
-}
-
 .datos-bottom {
     display: flex;
     justify-content: space-between;
@@ -206,4 +175,59 @@ main h1, .descripcion-inicio {
     padding-left: 25px;
 }
 
+.input-bibliografia input {
+    width: 600px;
+}
 
+.container-mi-cuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-avatar {
+    height: 170px;
+    width: 150px;
+    margin: 15px;
+}
+
+.cambiar-avatar {
+    position: relative;
+    bottom: 12px;
+}
+
+.datos-personales {
+    display: flex;
+}
+
+.datos-individual {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.datos-individual input {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.mas-sobre-ti {
+    margin-top: 10px;
+}
+
+.mas-sobre-ti input {
+    width: 400px;
+    height: 186px;
+}
+
+.guardar-volver {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+.guardar-volver button, .guardar-volver a{
+    margin: 10px;
+}

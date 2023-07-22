@@ -47,29 +47,32 @@
             </nav>
             </div>
     </header>
-        <main class="grid-item-main">
-            <h1>Mi Cuenta</h1> 
-            <img class="logo-avatar" src="../assets/LogoAvatar.png" alt="Avatar"> <!-- Avatar actual del usuario --> 
-            <a id="cambiar-avatar" href="">Cambiar Avatar</a> <!-- link que lleve al usuario a cambiar su avatar --> 
-            <section> 
-                <form class="datos-personales" action="/guardar-cambios"> <!-- "/guardar-cambios" indica al servidor donde voy a enviar esos datos --> 
-                    <input type="text" placeholder="Nombre de usuario"> 
-                    <input type="text" placeholder="Correo electrónico"> 
-                    <input type="text" placeholder="Número de celular"> 
-                    <input type="text" placeholder="Marca preferida"> 
-                    <input type="text" placeholder="Moto preferida"> 
-                    <input type="text" placeholder="Más Datos"> 
-                    <input type="text" placeholder="Más Datos"> 
-                    <input type="text" placeholder="Más Datos"> 
-                    <input type="text" placeholder="Más Datos"> 
-                    <input type="text" placeholder="Cuéntanos mas sobre ti"> 
-                </form>
-            </section>
-            <section class="datos-bottom">
-                <button id="guardar-cambios" type="submit">Guardar Cambios</button> 
-                <a href="../index.html">Volver al Inicio</a> 
-                </form> 
-            </section>
+        <main>
+            <h1>Mi Cuenta</h1>
+            <div class="container-mi-cuenta">
+                <div class="avatar">
+                    <img class="logo-avatar" src="../assets/LogoAvatar.png" alt="Avatar"> <!-- Avatar actual del usuario --> 
+                    <a class="cambiar-avatar" href="">Cambiar Avatar</a> <!-- link que lleve al usuario a cambiar su avatar --> 
+                </div>
+                <section>
+                    <form class="datos-personales" action="/guardar-cambios"> <!-- "/guardar-cambios" indica al servidor donde voy a enviar esos datos --> 
+                        <div class="datos-individual">
+                            <input type="text" placeholder="Nombre de usuario"> 
+                            <input type="text" placeholder="Correo electrónico"> 
+                            <input type="text" placeholder="Número de celular"> 
+                            <input type="text" placeholder="Marca preferida"> 
+                            <input type="text" placeholder="Moto preferida">    
+                        </div>
+                        <div class="mas-sobre-ti">
+                            <input type="text" placeholder="Cuéntanos mas sobre ti">
+                        </div> 
+                    </form>
+                </section>
+            </div>
+            <div class="guardar-volver">
+                <a href="../index.html">Volver al Inicio</a>                 
+                <button type="submit">Guardar Cambios</button>
+            </div>
         </main>
         <div class="fixed-bottom">
             <footer class="grid-item-footer">
