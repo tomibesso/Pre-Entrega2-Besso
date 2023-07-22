@@ -23,23 +23,36 @@ a .logo {
     border-radius: 50%;
 }
 
-.enlaces-internos a {
-    color: rgb(20, 28, 76);
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    padding: 0px 2px;
+.enlaces-navbar a {
+    color: rgb(43, 43, 77);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
 }
 
-#wiki a {
-    color: rgb(20, 28, 76);
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-#wiki a:hover {
-    color: rgb(11, 77, 193);
+.enlaces-navbar a:hover {
+    color: rgb(73, 104, 157);
     text-decoration: underline;
+}
+
+main h1 {
+    color: rgb(32, 28, 61);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.descripcion-inicio {
+    color: rgb(32, 28, 61);
+}
+
+.card-text {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+}
+
+.wikimotos {
+    text-decoration: none;
+    color: black;
+    font-family: 'Tektur', cursive;
 }
 
 .logos-redes-sociales {
@@ -163,7 +176,7 @@ main h1, .descripcion-inicio {
     width: 500px;
     margin-left: 25px;
     position: relative;
-    top: 20px
+    top: 40px
 }
 
 .datos-publicidad input, .datos-publicidad button {
@@ -185,6 +198,10 @@ main h1, .descripcion-inicio {
     align-items: flex-start;
 }
 
+.avatar {
+    display: flex;
+}
+
 .logo-avatar {
     height: 170px;
     width: 150px;
@@ -192,8 +209,10 @@ main h1, .descripcion-inicio {
 }
 
 .cambiar-avatar {
+    display: flex;
+    align-self: flex-end;
     position: relative;
-    bottom: 12px;
+    bottom: 15px;
 }
 
 .datos-personales {
@@ -230,4 +249,49 @@ main h1, .descripcion-inicio {
 
 .guardar-volver button, .guardar-volver a{
     margin: 10px;
+}
+
+.main-nosotros {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 100px;
+}
+
+.main-nosotros h3, .main-nosotros h5,.main-nosotros h2, .main-nosotros p {
+    color: rgb(32, 28, 61);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.main-nosotros p {
+    font-size: 1.25em;
+}
+
+.enlaces-bibliografia li {
+    margin: 2.5px;
+}
+
+.enlaces-bibliografia ul li a:visited {
+    color: rgb(145, 18, 145);
+}
+
+.url-usuarios {
+    position: absolute;
+    bottom: 150px;
+    margin-left: 25px;
+}
+
+.input-bibliografia input, .input-bibliografia button, .datos-personales div input, .guardar-volver button {
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 1365px) {
+    .galeria-partes-motos {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 350px 350px 350px 350px;
+
+    }
 }
