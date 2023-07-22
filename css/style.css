@@ -4,6 +4,13 @@ html, body {
     padding: 0;
 }
 
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
 a .logo {
     height: 75px;
     width: 75px;
@@ -87,17 +94,11 @@ main h1 {
     right: 10px;
 }
 
-.grid-container {
-    display: flex;
-    align-items: center;
-    height: 100px;
-}
 
 .buscador {
-    width: 350px;
-    position: absolute;
-    left: 575px;
-    top: 32px;
+    width: 400px;
+    position: relative;
+    left: 200px;
 }
 
 .nav-item:nth-of-type(4) {
