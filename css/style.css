@@ -286,13 +286,144 @@ main h1, .descripcion-inicio {
     border-radius: 5px;
 }
 
+@media only screen and (min-width:576px) and (max-width:1240px) {
+    .buscador {
+        position: absolute;
+        left: 200px;
+        width: 200px;
+    }
 
+    .main h3 {
+        text-align: center;
+    }
 
-@media screen and (max-width: 1365px) {
     .galeria-partes-motos {
         display: grid;
-        grid-template-columns: 50% 50% ;
-        grid-template-rows: 350px 350px 350px 350px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    main {
+        padding-bottom: 100px;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .guardar-volver {
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .buscador {
+        position: absolute;
+        left: 175px;
+        width: 200px;
+    }
+
+    .main h3 {
+        text-align: center;
+    }
+
+    .galeria-partes-motos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-toggler, .navbar-brand {
+        position: relative;
+        top: 30px;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .datos-publicidad {
+        display: flex;
+        align-items: center;
+    }
+
+    .datos-publicidad input, .datos-publicidad button {
+        width: 300px;
+    }
+
+    .enlaces-bibliografia {
+        margin-top: 30px;
+    }
+
+    .url-usuarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .input-bibliografia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-mi-cuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .avatar a {
+        display: flex;
+        align-self: center;
+        margin-top: 5px;
+    }
+
+    .datos-personales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .guardar-volver {
+        position: relative;
+        left: 15px;
+        top: 10px;
+    }
+
+    .collapse {
+        width: 120px;
+        position: absolute;
+        right: 20px;
+        top: 90px;
+    }
+
+    .collapse ul {
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav ul li a {
+        display: flex;
+        align-self: center;
     }
 }
