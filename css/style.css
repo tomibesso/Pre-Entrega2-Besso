@@ -318,22 +318,40 @@ main h1, .descripcion-inicio {
     }
 }
 
-@media only screen and (max-width:576px) {
-    .buscador {
-        position: absolute;
-        left: 175px;
-        width: 200px;
+@media only screen and (min-width:576px) and (max-width:815px) {
+    .galeria-partes-motos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        padding-top: 20px;
     }
+}
 
-    .main h3 {
+@media only screen and (min-width:360px) and (max-width:576px) {
+    .main-publicidad h3, main h5 {
+        padding: 0;
+        padding-top: 10px;
         text-align: center;
     }
 
+    .main-nosotros h1 {
+        margin-bottom: 20px;
+    }
+
+    main h3, main h2 {
+        text-align: center;
+    }
+
+    .datos-publicidad {
+        margin: 0;
+    }
+
     .galeria-partes-motos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 350px 350px;
+        margin-top: 20px;
+        padding: 0;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -347,13 +365,11 @@ main h1, .descripcion-inicio {
         padding-bottom: 100px;
     }
 
-    h5 {
-        text-align: center;
-    }
-
     .datos-publicidad {
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .datos-publicidad input, .datos-publicidad button {
@@ -368,7 +384,21 @@ main h1, .descripcion-inicio {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: auto;
+        margin: 0;
+        width: 100%;
+    }
+
+    .url-usuarios h3 {
+        text-align: center;
+    }
+
+    .input-bibliografia {
+        width: 90vw;
+    }
+
+    .input-bibliografia input {
+        width: 90%;
+        margin: 5px;
     }
 
     .input-bibliografia {
@@ -400,16 +430,15 @@ main h1, .descripcion-inicio {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
     }
 
-    .guardar-volver {
-        position: relative;
-        left: 15px;
-        top: 10px;
+    .mas-sobre-ti input {
+        width: 90vw;
+        margin-bottom: 10px;
     }
 
     .collapse {
+        z-index: 10;
         width: 120px;
         position: absolute;
         right: 20px;
@@ -425,5 +454,28 @@ main h1, .descripcion-inicio {
     .navbar-nav ul li a {
         display: flex;
         align-self: center;
+    }
+
+    .buscador {
+        position: absolute;
+        top: 10px;
+        left: 125px;
+        width: 250px;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 15px;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .guardar-volver {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
